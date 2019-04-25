@@ -31,17 +31,17 @@ public class MyServiceImpl implements MyServiceInterface {
 
 	@Override
 	public List<UserModel> getUsers() {
-		return null;
+		return myDao.getUsers();
 	}
 
 	@Override
-	public boolean updateUser(long id, UserModel user) {
-		return false;
+	public long updateUser(long id, UserModel user) {
+		return myDao.updateUser(id, user);
 	}
 
 	@Override
-	public boolean deleteUser(long id) {
-		return false;
+	public int deleteUser(long id) {
+		return myDao.deleteUser(id);
 	}
 
 }

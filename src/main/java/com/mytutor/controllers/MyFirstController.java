@@ -40,20 +40,20 @@ public class MyFirstController {
 	}
 
 	@RequestMapping(value = "/users", method = RequestMethod.GET)
-	public List<UserModel> getUsers(@PathVariable("id") long id) {
+	public List<UserModel> getUsers() {
 
 		return myService.getUsers();
 	}
 
 	@RequestMapping(value = "/user/{id}", method = RequestMethod.PUT)
 	public String updateUser(@PathVariable("id") long id, @RequestBody UserModel user) {
-		return myService.updateUser(id, user) ? "user updated" : "faild";
+		return myService.updateUser(id, user) >0 ? "user updated" : "faild";
 	}
 
 	@RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE)
 	public String deleteUser(@PathVariable("id") long id) {
 
-		return myService.deleteUser(id) ? "user delete" : "faild";
+		return myService.deleteUser(id)>0 ? "user delete" : "faild";
 	}
 
 }

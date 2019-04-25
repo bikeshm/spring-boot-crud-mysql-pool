@@ -9,6 +9,6 @@ public interface MyServiceInterface {
 	long addUser(UserModel user);
 	UserModel getUser(long id);
 	List<UserModel> getUsers();
-	boolean updateUser(long id, UserModel user );
-	boolean deleteUser(long id);
+	long updateUser(long id, UserModel user );
+	int deleteUser(long id);
 }
