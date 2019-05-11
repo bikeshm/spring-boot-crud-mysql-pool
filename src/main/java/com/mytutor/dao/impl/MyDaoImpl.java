@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.mytutor.dao.interfaces.MyDaoInterface;
+import com.mytutor.dao.MyDaoInterface;
 import com.mytutor.mapper.UserMapper;
 import com.mytutor.models.UserModel;
 import com.mytutor.utils.Query;

@@ -1,4 +1,4 @@
-package com.mytutor.dao.interfaces;
+package com.mytutor.dao;
 
 import java.util.List;
 

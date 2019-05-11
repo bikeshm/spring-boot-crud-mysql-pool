@@ -1,4 +1,4 @@
-package com.mytutor.services.interfaces;
+package com.mytutor.services;
 
 import java.util.List;
 

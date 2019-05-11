@@ -6,9 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.mytutor.dao.interfaces.MyDaoInterface;
+import com.mytutor.dao.MyDaoInterface;
 import com.mytutor.models.UserModel;
-import com.mytutor.services.interfaces.MyServiceInterface;
+import com.mytutor.services.MyServiceInterface;
 
 @Service
 public class MyServiceImpl implements MyServiceInterface {
